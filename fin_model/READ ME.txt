@@ -1,0 +1,30 @@
+To run this little script for fin model, pls make sure you have the following packedge installed:
+
+python 3.0 or above (ofc!)
+openpyxl
+sklearn
+
+***************************************************************************************************
+
+if you don't have openpyxl, run:
+
+ pip install openpyxl
+
+if you don't have sklearn, run:
+
+ pip install -U scikit-learn  
+
+or if you are in China and the above method is too slow:
+
+ python -m pip install scikit-learn  -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+***************************************************************************************************
+
+Now we can try run this scipt
+Pls read all comments before running it
+
+if you still don't know where to start after reading all the comments, try run this:
+**Please notice that you do have to change some parts of the code, as i dont know where you put this fin_model folder
+
+>>>
+python main.py --datafile_bankrupt_path  <the path you put fin_model folder>/fin_model/P-Fin-Model/Bankrupt_Basic_Ratios_by_Calendar_Quarter --datafile_nonbankrupt_path <the path you put fin_model folder>/fin_model/P-Fin-Model/Non-Bankrupt_Basic_Ratios_by_Calendar_Quarter_2020-2022 --b_x 6 --b_y 9 --n_x 6 --n_y 9 --test_data Non_Bankrupt_Companies.xlsx --t_x 7 --t_y 9
